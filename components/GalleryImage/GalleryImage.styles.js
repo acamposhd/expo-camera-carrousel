@@ -26,7 +26,7 @@ export const GALLERY_IMAGE_STYLES = StyleSheet.create({
     width: 365,
     margin: 15,
     height: 600,
-    resizeMode: "cover",
+    resizeMode: "stretch",
     borderRadius: 10,
   },
 });

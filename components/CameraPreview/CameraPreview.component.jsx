@@ -6,11 +6,14 @@ import { CAMERA_PREVIEW_STYLES as styles } from "./CameraPreview.styles";
 
 const CameraPreviewComponent = ({ photo, retakePicture, savePhoto }) => {
   return (
+    // CameraPreview Component
     <View style={styles.cameraPreviewMainContainer}>
+      {/* ImageBackground takes a picture and gets covered from it */}
       <ImageBackground
         source={{ uri: photo && photo.uri }}
         style={styles.imageBackground}
       >
+        {/* Container for the Re-take and Save Photo buttons  */}
         <View style={styles.CameraPreviewContainer}>
           <View style={styles.cameraPreviewBottomContainer}>
             <TouchableOpacity
@@ -36,7 +39,7 @@ const CameraPreviewComponent = ({ photo, retakePicture, savePhoto }) => {
                   color: COLORS.primaryLight,
                 }}
               >
-                save photo
+                Save photo
               </Text>
             </TouchableOpacity>
           </View>
